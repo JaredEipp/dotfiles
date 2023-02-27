@@ -1,0 +1,8 @@
+require("core.colorscheme")
+require("plugins.plugins-setup")
+require("core.options")
+require("plugins.nvim_tree")
+require("core.keymaps")
+require("plugins.lualine")
+require("plugins.telescope")
+require("plugins.lsp.mason")
