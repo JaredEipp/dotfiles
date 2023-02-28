@@ -1,7 +1,7 @@
 # Config for Neovim and Alacritty
 
 **The following config requires you to have a smart font which supports glyphs.** 
-The example used in this file is Ubuntu Mono Nerd Font Complete. The .ttf file for this font can be found [here](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/UbuntuMono/Regular/complete/Ubuntu%20Mono%20Nerd%20Font%20Complete%20Mono.ttf).
+The example used in this file is Ubuntu Mono Nerd Font Complete. The `.ttf` file for this font can be found [here](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/UbuntuMono/Regular/complete/Ubuntu%20Mono%20Nerd%20Font%20Complete%20Mono.ttf).
 
 ## Alacritty
 Most alacritty settings are left default besides the fonts and themes. The current theme in use is `catppuccin-mocha` and the repo for this theme can be found [here](https://github.com/catppuccin/alacritty)
