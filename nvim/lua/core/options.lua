@@ -22,7 +22,7 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.splitbelow = true;
 
 --word conventions
-vim.opt.iskeyword:append("_") -- one_word is now treated as one word
+vim.opt.iskeyword:append("_") -- 'one_word' is now treated as 'oneword'
 
 --scrolling
 vim.opt.scrolloff=10
@@ -30,4 +30,6 @@ vim.opt.scrolloff=10
 --cursor
 vim.opt.guicursor="a:block"
 
-vim.diagnostic.open_float()
+vim.diagnostic.config({
+    float = true,
+})
