@@ -12,11 +12,11 @@ The `init.lua` file is where all of the dependecies are managed, and ordering ma
 ### Packer is the package manager for this setup
 
 The file structure is as follows:
-`init.lua` -- handles dependencies
-`nvim/lua/core` -- handles neovim settings 
-`nvim/lua/plugins` -- handles plugin settings
-`nvim/lua/plugins/lsp` -- handles lsp settings
-`nvim/plugins` -- compiled lua files from Packer, not included in repo but is built after first run of nvim
+- `init.lua` -- handles dependencies
+- `nvim/lua/core` -- handles neovim settings 
+- `nvim/lua/plugins` -- handles plugin settings
+- `nvim/lua/plugins/lsp` -- handles lsp settings
+- `nvim/plugins` -- compiled lua files from Packer, not included in repo but is built after first run of nvim
 
 
 ## Nvim Plugins
