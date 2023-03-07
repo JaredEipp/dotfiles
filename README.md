@@ -25,7 +25,12 @@ TODO
 
 ## Environment Setup
 The `.bashrc` file has a basic *like default* setup with a few customizations. The simple script at the beginning shows if the `cwd` is a git repo and shows the branch name wrapped in parenthesis **before** your `cwd`  and is N/A if not in a git repository. The PS1 var formatted looks like: `User@git branch)cwd~ ` where `User@` is [bold blue], `(git branch)`, if one exists, is [bold red]. If no git repo exists for the `cwd` then this part is omitted. The `cwd~ ` is [bold green].
+
+The path for this file shoud be `$HOME/.bashrc`. If you have moved the file there and want to load it without restarting your termminal, the command `source $HOME/.bashrc` should do the trick.
+
 **NOTE** If this `.bashrc` file is being installed on a remote server accessed over `ssh`, then changing the name to `.bash_profile` will cause it to be loaded at login
 
-There is also the `LS_COLORS.txt` file that allows you to hard code specific colors for the `ls` command. This can be loaded into your `LS_COLORS` environment variable by running the command `export LS_COLORS=$(cat PATH_TO_THIS_REPO/dotfiles/LS_COLORS.txt)`. 
-**Note:** If setting this environment variable is not working for your setup or you have a mac, there is an alias in the `.bashrc` that changes `ls` to `ls --color=auto` using an alias. This is redundant if you set the env, but in certain situations it can be easier.
+### Some Points to Note
+-The command `eval $(dircolors -b)` will set your LS_COLORS environment variable, however, it can silently fail. You can check for success by running the command `export | grep 'LS_COLORS'`. Large output for that variable indicates success. If the `LS_COLORS` variable is not set, uncommenting the line  `alias ls='ls --color=auto'` will achieve a similar result.  **Note:** the `dircolors` command is exclusive to linux and does not work on mac.
+- On a typical system, running `vi` aliases `vim` by default, however, I alias `vi` to `nvim` to shorthand my opening of neovim. If I want standard vim, I just ues the `vim` command, since that stays unchanged.
+
