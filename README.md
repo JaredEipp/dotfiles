@@ -21,3 +21,11 @@ The file structure is as follows:
 
 ## Nvim Plugins
 TODO
+
+
+## Environment Setup
+The `.bashrc` file has a basic *like default* setup with a few customizations. The simple script at the beginning shows if the `cwd` is a git repo and shows the branch name wrapped in parenthesis **before** your `cwd`  and is N/A if not in a git repository. The PS1 var formatted looks like: `User@git branch)cwd~ ` where `User@` is [bold blue], `(git branch)`, if one exists, is [bold red]. If no git repo exists for the `cwd` then this part is omitted. The `cwd~ ` is [bold green].
+**NOTE** If this `.bashrc` file is being installed on a remote server accessed over `ssh`, then changing the name to `.bash_profile` will cause it to be loaded at login
+
+There is also the `LS_COLORS.txt` file that allows you to hard code specific colors for the `ls` command. This can be loaded into your `LS_COLORS` environment variable by running the command `export LS_COLORS=$(cat PATH_TO_THIS_REPO/dotfiles/LS_COLORS.txt)`. 
+**Note:** If setting this environment variable is not working for your setup or you have a mac, there is an alias in the `.bashrc` that changes `ls` to `ls --color=auto` using an alias. This is redundant if you set the env, but in certain situations it can be easier.
