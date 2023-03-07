@@ -31,6 +31,6 @@ The path for this file shoud be `$HOME/.bashrc`. If you have moved the file ther
 **NOTE** If this `.bashrc` file is being installed on a remote server accessed over `ssh`, then changing the name to `.bash_profile` will cause it to be loaded at login
 
 ### Some Points to Note
--The command `eval $(dircolors -b)` will set your LS_COLORS environment variable, however, it can silently fail. You can check for success by running the command `export | grep 'LS_COLORS'`. Large output for that variable indicates success. If the `LS_COLORS` variable is not set, uncommenting the line  `alias ls='ls --color=auto'` will achieve a similar result.  **Note:** the `dircolors` command is exclusive to linux and does not work on mac.
+- The command `eval $(dircolors -b)` will set your LS_COLORS environment variable, however, it can silently fail. You can check for success by running the command `export | grep 'LS_COLORS'`. Large output for that variable indicates success. If the `LS_COLORS` variable is not set, uncommenting the line  `alias ls='ls --color=auto'` will achieve a similar result.  **Note:** the `dircolors` command is exclusive to linux and does not work on mac.
 - On a typical system, running `vi` aliases `vim` by default, however, I alias `vi` to `nvim` to shorthand my opening of neovim. If I want standard vim, I just ues the `vim` command, since that stays unchanged.
 
